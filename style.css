@@ -9,7 +9,7 @@ body {
   flex-direction: column;
 }
 
-header.header {
+.header {
   display: flex;
   justify-content: space-between;
   font-style: normal;
@@ -22,7 +22,7 @@ header.header {
   color: #6070ff;
 }
 
-header.header a {
+.header a {
   text-decoration: none;
 }
 
