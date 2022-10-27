@@ -24,7 +24,7 @@ clone repository
 
 ## Authors
 
-👤 **monicah**
+👤 **monicah wanjema**
 
 - GitHub: [@monicah79](https://github.com/monicah79)
 
