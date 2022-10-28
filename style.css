@@ -189,6 +189,8 @@ ul.sub-icons li {
   text-align: center;
   background: #ebebff;
   border-radius: 8px;
+  color: #6070ff;
+  font-size: 12px;
 }
 
 button.sub-button {
