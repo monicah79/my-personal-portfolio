@@ -79,12 +79,13 @@ section.sub-grid-display {
 .sub-homepage {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   margin: 0 20px;
-  padding: 10px;
+  padding: 15px 15px;
   background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
 }
   
 div.sub-card-details {
@@ -101,7 +102,7 @@ h2.sub-header {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  margin: 0px;
+  text-align: left;
 }
   
 .sub-paragraph-page {
