@@ -157,9 +157,19 @@ p.sub-paragraph-page {
   color: #6070ff;
 }
 
+.sub-button:hover :enabled {
+  background: #fff;
+  color: #6070ff;
+}
+
 .sub-button:active {
   background: #2230d2;
   border-radius: 8px;
+}
+
+.sub-button:hover :active{
+  background-color: #2230d2;
+  color: #fff;
 }
 
 .sub-button:disabled {
