@@ -167,7 +167,7 @@ p.sub-paragraph-page {
   border-radius: 8px;
 }
 
-.sub-button:hover :active{
+.sub-button:hover :active {
   background-color: #2230d2;
   color: #fff;
 }
