@@ -317,7 +317,7 @@ footer {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  background-color: #6070FF;
+  background-color: #6070ff;
   border-top-left-radius: 100px;
   padding-top: 90px;
   padding-bottom: 45px;
@@ -329,7 +329,7 @@ footer {
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .subbody {
@@ -338,11 +338,11 @@ footer {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
 }
 
 .contact-button {
-  color: #6070FF;
+  color: #6070ff;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
@@ -370,7 +370,7 @@ textarea {
   height: 170px;
   border-radius: 8px;
   border: none;
-  color: #B3BAC5;
+  color: #b3bac5;
 }
 
 .label-1 {
