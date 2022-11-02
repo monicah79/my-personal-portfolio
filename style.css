@@ -381,3 +381,9 @@ textarea {
 .btn {
   align-self: flex-start;
 }
+
+.shape {
+  margin-top: 10px;
+  border-radius: 10px;
+  bottom: 8px;
+}
