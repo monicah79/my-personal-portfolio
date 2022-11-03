@@ -151,6 +151,7 @@ p.sub-paragraph-page {
   background: #e5e5e5;
   border: 1px solid "#ced6de";
   border-radius: 2px;
+  background-color: brown;
 }
 
 .sub-button:enabled {
@@ -386,4 +387,24 @@ textarea {
   margin-top: 10px;
   border-radius: 10px;
   bottom: 8px;
+}
+
+.logo {
+  transition: all 3s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+}
+
+.image-hover:hover {
+  transform: scale(1.5);
+}
+
+.sub {
+  transition: 2s ease-in-out;
+}
+
+.sub:hover {
+  transform: translate(42px);
 }
