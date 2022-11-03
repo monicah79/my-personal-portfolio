@@ -387,3 +387,30 @@ textarea {
   border-radius: 10px;
   bottom: 8px;
 }
+
+.logo {
+  transition: all 3s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+}
+
+.sub-button:hover {
+  background-color: brown;
+}
+
+.image-hover:hover {
+  transform: scale(1.5);
+}
+
+.sub:hover {
+  transform: translate(42px);
+}
+
+.sub {
+  transition: 2s ease-in-out;
+}
+
+
+
