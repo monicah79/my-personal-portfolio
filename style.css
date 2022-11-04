@@ -85,7 +85,7 @@ section.homepage-section h2 {
 
 @media (min-width: 768px) {
   .homepage-section {
-    flex-direction:row;
+    flex-direction: row;
     gap: 20px;
   }
 }
