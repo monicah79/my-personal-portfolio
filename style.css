@@ -29,11 +29,47 @@ body {
   text-decoration: none;
 }
 
-section.homepage-section {
-  background-image: url(Images/Background-image.png);
-  background-size: cover;
+.menu {
+  flex: 1;
+  text-align: right;
+}
+
+.menu ul li{
+  color: #344563; 
+  position: relative;
+  padding: 16px 20px;
+  list-style-type: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.text-box {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.text-box-icon ul{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0px;
+}
+
+@media(max-width: 700px){
+  .text-box h1{
+    font-size: 20px;
+  }
+}
+
+.homepage-section {
+  display: flex;
   margin-top: 20px;
   padding: 16px 20px;
+  flex-direction: column;
 }
 
 section.homepage-section h2 {
@@ -42,10 +78,29 @@ section.homepage-section h2 {
   font-size: 40px;
   line-height: 52px;
   display: flex;
-  align-items: center;
   color: #172b4d;
   width: 327px;
   height: 101px;
+  flex-direction: column;
+}
+
+@medim (min-width: 768px){
+  .homepage-section{
+    flex-direction:row;
+    gap:20px
+  }
+}
+
+.menubtn{
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+@media (min-width:768px){
+.nav{
+  display: none
+  }
 }
 
 p.homepage-paragraph {
@@ -55,6 +110,8 @@ p.homepage-paragraph {
   line-height: 24px;
   color: #344563;
 }
+
+
 
 .homepage-quotes {
   font-style: normal;
@@ -66,36 +123,43 @@ p.homepage-paragraph {
 
 ul.icons {
   display: flex;
-  justify-content: space-between;
   width: 50%;
   list-style-type: none;
   padding: 0;
+  gap:10px;
 }
 
 section.sub-grid-display {
   display: grid;
-  gap: 20px;
   padding: 10px 0;
-  margin: 0 auto;
+  margin: 50px 0px;
+  grid-template-columns: auto;
+  row-gap: 50px;
 }
 
 .sub-homepage {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 20px;
-  padding: 15px 15px;
+  margin: 0 24px;
+  padding: 16px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  min-height: 100%;
 }
 
-div.sub-card-details {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: flex-start;
+@media (min-width: 768px){
+  .sub-homepage{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+  } 
+
+  .image-hover{
+    width: 544px;
+
+  }
 }
 
 h2.sub-header {
@@ -116,7 +180,8 @@ ul.sub-titles {
   display: flex;
   padding: 0;
   list-style-type: none;
-  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
 }
 
 ul.sub-titles li {
@@ -187,24 +252,26 @@ p.sub-paragraph-page {
 }
 
 ul.sub-icons {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
+ display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+  list-style: none;
   padding: 0;
-  text-align: center;
-  width: 70%;
+  margin-bottom: 0;
+}
+
+.sub-text{
+  width: 80%;
 }
 
 ul.sub-icons li {
-  flex-direction: row;
-  align-items: center;
   padding: 4px 12px;
-  text-align: center;
   background: #ebebff;
   border-radius: 8px;
   color: #6070ff;
   font-size: 12px;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 
 button.sub-button {
@@ -399,6 +466,10 @@ textarea {
 
 .image-hover:hover {
   transform: scale(1.5);
+}
+
+.image-hover img {
+  width: 100%;
 }
 
 .sub {
