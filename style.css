@@ -8,8 +8,8 @@ body {
 }
 
 .main-page {
-  display: flex;
-  flex-direction: column;
+  background-image: url(Images/Background-image.png);
+  background-size: cover;
 }
 
 .header {
@@ -29,42 +29,49 @@ body {
   text-decoration: none;
 }
 
+.navigation ul {
+  font-size: 15px;
+  font-weight: 500;
+  color: #344563
+}
+
 .menu {
-  flex: 1;
+  display: flex;
   text-align: right;
 }
 
 .menu ul li {
   color: #344563;
-  position: relative;
   padding: 16px 20px;
   list-style-type: none;
-  display: inline-block;
+  display: flex;
   font-weight: 500;
   font-size: 15px;
+  gap: 20%;
 }
 
 .text-box {
-  width: 90%;
-  margin-top: 20px;
+  width: 100%;
+  margin: 20px 24px;
 }
 
-.text-box-icon ul {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  list-style-type: none;
-  padding: 0;
-  align-items: center;
+.icons {
+display: flex;
+gap: 20px;
+padding: 0;
+list-style: none;
 }
 
-@media (max-width: 700px) {
-  .text-box h1 {
+@media (min-width: 768px) {
+  .main-page {
     font-size: 20px;
+    margin: 34px;
   }
 }
 
 .homepage-section {
+  background-image: url(Images/Background-image.png);
+  background-size: cover;
   display: flex;
   margin-top: 20px;
   padding: 16px 20px;
@@ -96,8 +103,23 @@ section.homepage-section h2 {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+
+.nav{
+  display:flex;
+  align-items: center;
+  padding:0;
+  list-style: none;
+  gap:20px
+}
+
+@media (max-width: 768px) {
   .nav {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .menubtn {
     display: none;
   }
 }
@@ -108,6 +130,14 @@ p.homepage-paragraph {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  width: 90%;
+
+}
+
+@media (max-width: 768px){
+p.homepage-paragraph{
+  width:40%;
+}
 }
 
 .homepage-quotes {
@@ -116,14 +146,6 @@ p.homepage-paragraph {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-}
-
-ul.icons {
-  display: flex;
-  width: 50%;
-  list-style-type: none;
-  padding: 0;
-  gap: 10px;
 }
 
 section.sub-grid-display {
@@ -142,7 +164,15 @@ section.sub-grid-display {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  min-height: 100%;
+  min-height: 50%;
+}
+
+.about {
+  width: 100%;
+}
+
+.sub-language{
+  margin-left: 10px;
 }
 
 @media (min-width: 768px) {
@@ -411,7 +441,6 @@ footer {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  margin-left: 18px;
   padding: 12px 16px;
   border-radius: 8px;
 }
@@ -443,7 +472,8 @@ textarea {
 }
 
 .btn {
-  align-self: flex-start;
+  align-self: center;
+  margin: 50px;
 }
 
 .shape {
@@ -474,4 +504,10 @@ textarea {
 
 .sub:hover {
   transform: translate(42px);
+}
+
+@media (min-width: 768px) {
+  .form {
+    align-items: center;
+  }
 }
