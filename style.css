@@ -32,7 +32,7 @@ body {
 .navigation ul {
   font-size: 15px;
   font-weight: 500;
-  color: #344563
+  color: #344563;
 }
 
 .menu {
@@ -56,10 +56,10 @@ body {
 }
 
 .icons {
-display: flex;
-gap: 20px;
-padding: 0;
-list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
 }
 
 @media (min-width: 768px) {
@@ -103,13 +103,12 @@ section.homepage-section h2 {
   cursor: pointer;
 }
 
-
 .nav{
-  display:flex;
+  display: flex;
   align-items: center;
-  padding:0;
+  padding: 0;
   list-style: none;
-  gap:20px
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
@@ -131,13 +130,12 @@ p.homepage-paragraph {
   line-height: 24px;
   color: #344563;
   width: 90%;
-
 }
 
-@media (max-width: 768px){
-p.homepage-paragraph{
-  width:40%;
-}
+@media (max-width: 768px) {
+p.homepage-paragraph {
+    width: 40%;
+  }
 }
 
 .homepage-quotes {
@@ -171,7 +169,7 @@ section.sub-grid-display {
   width: 100%;
 }
 
-.sub-language{
+.sub-language {
   margin-left: 10px;
 }
 
