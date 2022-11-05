@@ -103,7 +103,7 @@ section.homepage-section h2 {
   cursor: pointer;
 }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
   padding: 0;
@@ -133,7 +133,7 @@ p.homepage-paragraph {
 }
 
 @media (max-width: 768px) {
-p.homepage-paragraph {
+  p.homepage-paragraph {
     width: 40%;
   }
 }
@@ -471,7 +471,7 @@ textarea {
 
 .btn {
   align-self: center;
-  margin: 50px;
+  margin-left: 20%;
 }
 
 .shape {
