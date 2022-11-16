@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -35,9 +40,41 @@ body {
   color: #344563;
 }
 
-.menu {
+.navigation {
   display: flex;
-  text-align: right;
+  align-items: center;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.menu .bar {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #6070ff;
+  margin: 4px auto;
+}
+
+.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.active .bar:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  margin-top: 25px;
+}
+
+.active .bar:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  margin-top: 25px;
 }
 
 .menu ul li {
@@ -97,29 +134,51 @@ section.homepage-section h2 {
   }
 }
 
-.menubtn {
-  border: none;
-  background-color: #fff;
-  cursor: pointer;
-}
-
 .nav {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  list-style: none;
-  gap: 20px;
+  height: 0;
+  overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-  }
+.show-links {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(96, 112, 255, 0.7);
+  backdrop-filter: blur(2px);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 130px;
+  transform: translate(0, -20px);
+  gap: 30px;
+}
+
+.show-links a {
+  color: #fff;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 @media (min-width: 768px) {
-  .menubtn {
+  .menu {
     display: none;
+  }
+
+  .nav {
+    height: auto;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+
+  .nav a {
+    color: #344563;
   }
 }
 
@@ -482,6 +541,7 @@ textarea {
 
 .logo {
   transition: all 3s ease-in-out;
+  color: #6070ff;
 }
 
 .logo:hover {
