@@ -145,11 +145,13 @@ section.homepage-section h2 {
   position: fixed;
   top: 0;
   left: 0;
-  background: #396df2;
+  background: rgba(96, 112, 255, 0.7);
+  backdrop-filter: blur(2px);
   list-style: none;
   display: flex;
   flex-direction: column;
-  padding-top: 70px;
+  padding-top: 130px;
+  transform: translate(0,-20px);
   gap: 30px;
 }
 
