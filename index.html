@@ -354,28 +354,30 @@
         <p class="subbody sub">
            If you have an application you interested in developing,a feature that you need built or a project thats needs coding.I'd love to help with it
         </p>
-          <form class="contact-input" action="https://formspree.io/f/mjvzporw" method="post">
+    <form class="contact-input" id="form" action="https://formspree.io/f/mjvzporw" method="post">
             <div class="label-1">
                 <label for="name"></label>
-            <input class="sub" name="Monicah" required id="monniewanjema@gmail.com" type="text" placeholder="Name" value="Yeremias" maxlength="30">
+                <input class="sub" name="name" required id="name" type="text" placeholder="Name" maxlength="30">
             </div>
-        <div class="label-1">
-            <label for="email"></label>
-            <input class="sub" type="email" required name="monniewanjema@gmail.com" placeholder="Email" value="natajayanj14@gmail.com" >
-        </div>
-          <div class="label-1">
-            <label for="message"></label>
-            <textarea class="sub" name="message" required placeholder="Write your message" maxlength="500"></textarea>
-          </div>
+            <div class="label-1">
+              <label for="email"></label>
+              <input class="sub" type="email" required id="email" name="email" placeholder="Email" >
+             </div>
+             <div class="label-1">
+               <label for="message"></label>
+               <textarea class="sub" name="message" id="message" required placeholder="Write your message" maxlength="500"></textarea>
+             </div>
             <div class="btn">
-          <button class="contact-button sub-button" type="submit">
-            Get in touch
-         </button>
+              <button class="contact-button sub-button" type="submit">
+                 Get in touch
+              </button>
+              <span class="span-btn"></span>
+            </div>
          <div class="shape">
             <img src="Images/shape.svg" alt="line shape">
          </div>
-        </form>
-            </div>
+    </form>
+            
     </div>
     </footer>
     <script src="index.js"></script>

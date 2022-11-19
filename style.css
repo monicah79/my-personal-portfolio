@@ -645,6 +645,10 @@ textarea {
   align-self: center;
 }
 
+.span-btn {
+  color: red;
+}
+
 .shape {
   margin-top: 10px;
   border-radius: 10px;
