@@ -27,7 +27,7 @@ function checkMail(mail) {
 form.addEventListener('submit', (e) => {
   if (!checkMail(email.value)) {
     e.preventDefault();
-    span.innerText = 'please enter valid email';
+    span.innerText = 'please enter valid email address';
   } else {
     span.innerText = '';
   }
